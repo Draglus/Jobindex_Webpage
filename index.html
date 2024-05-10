@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search App</title>
+    <!-- Include Dash CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="search_word" style="font-weight: bold;">Enter search word(s):</label>
+            <input id="search_word" type="text">
+            <div id="search_result" style="overflow-y: scroll; max-height: 200px; margin-top: 10px;"></div>
+        </div>
+
+        <div>
+            <label for="Description_Sentence" style="font-weight: bold;">Enter description of yourself:</label>
+            <input id="Description_Sentence" type="text">
+            <button id="Description_button" style="margin-left: 10px; background-color: #4CAF50; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 5px;">Send in</button>
+        </div>
+
+        <div id="Description_result" style="overflow-y: scroll; max-height: 200px; margin-top: 10px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;"></div>
+
+        <div>
+            <label for="region-dropdown" style="font-weight: bold;">Choose location:</label>
+            <select id="region-dropdown" style="width: 300px; margin-left: 10px; margin-top: 10px;">
+                <option value=""></option>
+                <option value="storkoebenhavn">Storkøbenhavn</option>
+                <!-- Add other options here -->
+            </select>
+        </div>
+    </div>
+</body>
+</html>
